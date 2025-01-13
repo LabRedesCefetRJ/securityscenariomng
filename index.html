@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/details.css">
+
+    <script src="./js/patterns.js" defer></script>
+    <script src="./js/criarCampo.js" defer></script>
+    <script src="./js/handleConexao.js" defer></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/detailsScripts.js" defer></script>
+    <script src="./js/details.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+    <title>CENARIOS</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./home.html">voltar</a>
+        </nav>
+    </header>
+
+    <div class="box">
+        <div class="options">
+
+            <div id="pcDiv">
+                <div class="pc option" draggable="true" data-id="">
+                    <div class="draggingPoint"></div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <p>desktop</p>
+                </div>
+            </div>
+
+            <div id="serverDiv">
+                <div class="server option" draggable="true" data-id="">
+                    <div class="draggingPoint"></div>
+                    <i class="fa-solid fa-server"></i>
+                    <p>servidor</p>
+                </div>
+            </div>
+
+            <div id="switchDiv">
+                <div class="switch option" draggable="true" data-id="">
+                    <div class="draggingPoint"></div>
+                    <i class="fa-solid fa-ethernet"></i>
+                    <p>switch</p>
+                </div>
+            </div>
+
+            <div id="salvar" class="option">
+                <i class="fa-regular fa-floppy-disk"></i>
+                <p>SALVAR</p>
+            </div>
+        </div>
+
+        <div class="field">
+
+            <div class="optionsField" onselectstart="return false">
+
+                <div class="deleteBin"></div>
+    
+                <div class="details" onselectstart="return true">
+                    <div class="detailsBox">
+                        <button class="closeDetails">X</button>
+    
+                        <p>SERVER</p>
+    
+                        <label for="nome">Nome:</label>q
+                        <input type="text" name="nome" id="nome"><br>
+    
+                        <label for="tipo">tipo</label>
+                        <select name="tipo" id="tipo">
+                            <option value="normal">normal</option>
+                            <option value="vitima">vitima</option>
+                            <option value="mestre">mestre</option>
+                        </select><br>
+    
+                        <label for="nic">interface</label>
+                        <input type="text" name="nic" id="nic">
+                        <input type="text" name="id" id="id">
+                        <br>
+    
+                        <label for="so">Sistema Operacional:</label>
+                        <input type="text" name="so" id="so"><br>
+    
+                        <label for="ip">Daemons:</label>
+                        <input type="text" name="daemons" id="daemons">
+                        <button>+</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="drawField">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
