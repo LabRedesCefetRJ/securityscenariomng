@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html {
+    font-size: 0.73vw;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+nav {
+    height: 7.0rem;
+    background-color: #000;
+    padding: .5rem;
+}
+
+.box {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 2.0rem;
+    background-color: #222;
+    overflow: visible;
+}
+
+.options {
+    width: fit-content;
+    height: 100%;
+    background-color: #333;
+    padding: 0 2.0rem 0 1.0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.0rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: 1.0rem;
+}
+
+.options .option{
+    height: fit-content;
+}
+
+.option {
+    height: 10.0rem;
+    width: 10.0rem;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: .1rem solid #fff;
+    overflow: visible;
+    padding: .5rem;
+}
+
+.draggingPoint {
+    width: 1.0rem;
+    height: 1.0rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.option i {
+    font-size: 5.0rem;
+    color: #fff;
+}
+
+.option .role {
+    font-size: 1.25rem;
+    width: 100%;
+    height: 1.6rem;
+    border-radius: 1.0rem;
+    text-align: center;
+    border: none;
+    background-color: #ccc;
+    color: #222;
+    padding: 0 .5rem;
+    overflow: hidden;
+}
+
+.option p{
+    font-size: 1.4rem;
+}
+
+.option:hover {
+    background-color: #cccccc27;
+    cursor: pointer;
+}
+
+.field {
+    width: 100%;
+    height: fit-content;
+    background-color: #333;
+    border: .1rem solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    padding: 0 8.0rem 8.0rem 0;
+}
+
+.deleteBin {
+    width: 100%;
+    height: 7.0rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #5757574b;
+    display: none;
+    z-index: 1;
+
+    border-top: .2rem dashed #fff;
+}
+
+.coord {
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: visible;
+    background-color: transparent;
+    /* border: .1rem solid rgba(0, 255, 0, 0.096); */
+    padding: .1rem;
+}
+
+.dragging {
+    opacity: 1;
+}
+
+.details {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #cccccc83;
+    z-index: 2;
+
+
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsContent {
+    z-index: 4;
+    background-color: #555;
+    width: 40.0rem;
+    height: 40.0rem;
+    border-radius: .8rem;
+    padding: 1.0rem;
+    color: #fff;
+    position: relative;
+    border: .2rem solid #fff;
+    line-height: 2;
+    overflow-y: scroll;
+}
+
+.detailsContent input {
+    background-color: #fefefe;
+    border-radius: 1.0rem;
+    border: none;
+    height: 2.0rem;
+    padding: .5rem;
+}
+
+.closeDetails {
+    position: absolute;
+    right: 1.0rem;
+    top: 1.0rem;
+    font-size: 2.0rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+
+
+.closeDetails:hover{
+    color: #ccc;
+}
+
+#salvar {
+    color: #04a738;
+    border: .3rem solid #04a738;
+}
+
+::-webkit-scrollbar {
+    width: 1.0rem;
+    background-color: #333;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    width: 50%;
+    border-radius: 1.0rem;
+}
+
+::-webkit-scrollbar-track-piece {
+    padding: .2rem;
+}
+
+.forMestre {
+    display: none;
+}
+
+#id,
+#device {
+    display: inline-block;
+}
+
+#id{
+    margin-right: 2.0rem;
+}
+
+#interNic {
+    width: 20.0rem;
+}
+
+#interId {
+    width: 5.0rem;
+}
+
+select{
+    width: 10.0rem;
+    border-radius: 1.0rem;
+}
+
+.newDaemon{
+    height: 2.0rem;
+    width: 2.0rem;
+    border-radius: 50.0rem;
+    border: none;
+}
+
+.daemonsField{ 
+    width: 20.0rem;
+}
+
+.daemons{
+    width: 23.0rem;
+    height: fit-content;
+    display:inline-block;
+    vertical-align: text-top;
+}

@@ -1,0 +1,33 @@
+//PC NORMAL
+{
+    "id": "" ,
+    "nome": "",
+    "descrição": "",
+    "SO":"select",
+    "aplications" || "servicos":[],
+
+    "rede": {
+        "DNS": [],
+        "gateway":"",
+        "interface": [
+            {
+                "id": "",
+                "conf": [
+                    {
+                        "ip": "",
+                        "mask":""
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+//SWITCH
+{
+    "id":"" ,
+    "nome":"" ,
+    "descricao": ,
+    "qtdPortas":"",
+    "portasLigadas":""
+}
