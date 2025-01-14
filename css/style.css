@@ -135,7 +135,7 @@ nav {
     height: 1.5rem;
     overflow: visible;
     background-color: transparent;
-    border: .1rem solid #00ff0018;
+    /* border: .1rem solid #00ff0018; */
     padding: .1rem;
 }
 
