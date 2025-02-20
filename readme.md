@@ -1,5 +1,7 @@
 # 🥷 SECURITY SCENARIO MNG
 
+Recurso Educacional Aberto (REA) para auxiliar em aulas práticas em disciplinas de Segurança de Sistemas de Informação, Redes de Computadores e Sistemas Operacionais.
+
 ### 💻 Tutorial de instalação da ferramenta:
 
 1. `sudo apt install nodejs npm node-http-server`
